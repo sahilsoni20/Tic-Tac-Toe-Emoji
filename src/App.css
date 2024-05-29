@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(230, 243, 254);
+  font-family: "Noto Sans", sans-serif;
+}
+
+.emoji-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.user-input {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 2.3rem;
+}
+
+input {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.2em;
+  border: transparent;
+  border-bottom: 2px solid black;
+  width: 42rem;
+  font-size: 2.3rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-emoji i {
+  font-size: 2.3rem;
+}
+
+.span-emoji {
+  margin-top: 1rem;
+}
+
+.span-emoji span {
+  border-bottom: 3px solid;
+  border-radius: 20%;
+  padding-bottom: 2px;
+  padding: 0.2em;
+}
+
+.span-emoji span:not(.active) {
+  border-bottom: transparent;
+}
+
+.emoji-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji-picker i {
+  font-size: 2.3rem;
+}
+
+.emoji-picker span {
+  margin: 0 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.emoji-picker span > i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.emoji-picker span.active {
+  border: 2px solid;
+}
+
+.emojis {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+  max-width: 90%;
+  line-height: 1.75em;
+  overflow: auto;
+  height: 11rem;
+}
+
+.emojis i:hover {
+  transform: translate;
+  color: rgb(255, 255, 135);
+}
+
+.emojis li {
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  input {
+    width: 36rem;
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  label,
+  input {
+    font-size: 2rem;
+  }
+  input {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  label,
+  input {
+    font-size: 1.8rem;
+  }
+  input {
+    width: 24rem;
+  }
+  .emoji-picker span {
+    font-size: 1.3rem;
+  }
+  .emoji-picker span > i {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  label,
+  input {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 18rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .emoji-picker span {
+    margin: 0 3px;
+    padding: 8px;
+    font-size: 1.2rem;
+  }
+  .emoji-picker span > i {
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+  }
+  .emojis {
+    height: 8rem;
+  }
+}
+
+.play-btn {
+  padding: 0.2em;
+  font-size: 1.8em;
+  width: 4.5em;
+  border: 1px solid black;
+  border-width: 2px;
+  margin-top: 1rem;
+}
+
+.play-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid yellow;
+  box-shadow: 0 0 1em yellow;
+}
+
+.footer {
+  font-size: 1.3rem;
+  margin-top: 1em;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-1,
+.player-2 {
+  font-size: 2.3rem;
+  margin-top: 2.5rem;
+}
+
+.player-1 {
+  margin-left: 2em;
+}
+
+.player-2 {
+  margin-right: 2em;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 155px);
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+  bottom: 20px;
+  margin-bottom: -25px;
+}
+
+.square {
+  width: 155px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.7rem;
+  cursor: pointer;
+  border: 1.6px solid black;
+  border-collapse: collapse;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: whitesmoke;
+}
+
+.em:hover {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  -webkit-filter: brightness(1.25) drop-shadow(0 0 0.2em black);
+  filter: brightness(1.25) drop-shadow(0 0 0.2em black);
+}
+
+.em {
+  background-color: transparent;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  padding: 20px;
+  height: 100;
+  border-radius: 5px;
+  text-align: center;
+  background: transparent;
+}
+
+.overlay-content p {
+  font-size: 1.5rem;
+  background: transparent;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 7rem;
+}
+
+.overlay-content button {
+  position: relative;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 4rem;
+  padding: 0.3em;
+  text-align: center;
+  top: 100px;
+}
+
+.overlay-content button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid yellow;
+  box-shadow: 0 0 0.5em yellow;
+}
