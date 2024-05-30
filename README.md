@@ -1,15 +1,9 @@
-<section id="introduction" class="container">
+<section>
     <h2>Introduction</h2>
     <p>Tic-Tac-Toe Emojis is a web-based application that brings a new twist to the traditional Tic-Tac-Toe game by using emojis for the game markers. This project is built using React and demonstrates the use of state management, component lifecycle, and basic CSS for styling.</p>
 </section>
 
-<section id="demo" class="container">
-    <h2>Demo</h2>
-    https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/754387e7-5bf2-43be-b09d-ce03fde1e000
-    https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/1f00a027-ce95-4aca-ab11-125a969b824c  
-</section>
-
-<section id="installation" class="container">
+<section>
     <h2>Installation</h2>
     <h3>Prerequisites</h3>
     <p>Node.js (v14 or higher recommended)</p>
@@ -28,14 +22,14 @@
     </ol>
 </section>
 
-<section id="usage" class="container">
+<section>
     <h2>Usage</h2>
     <p>To start the development server, run:</p>
     <pre><code>npm start</code></pre>
     <p>This will launch the app in development mode and open <a href="http://localhost:3000">http://localhost:3000</a> in your default browser. The page will reload when you make changes.</p>
 </section>
 
-<section id="contributing" class="container">
+<section>
     <h2>Contributing</h2>
     <p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
     <ol>
@@ -46,12 +40,9 @@
         <li>Open a Pull Request</li>
     </ol>
 </section>
+<h2>Demo</h2>
 
-<section id="license" class="container">
-    <h2>License</h2>
-    <p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
-</section>
+https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/a6068c42-c936-4dc6-b524-881c0b40c8f5
 
-<footer>
-    <p>&copy; 2024 Tic-Tac-Toe Emojis. All rights reserved.</p>
-</footer>
+
+![Screenshot 2024-05-24 090954](https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/99ac41ec-e8e6-4355-8ffb-eb01b3c50604)
