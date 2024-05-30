@@ -45,4 +45,6 @@
 https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/a6068c42-c936-4dc6-b524-881c0b40c8f5
 
 
-![Screenshot 2024-05-24 090954](https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/99ac41ec-e8e6-4355-8ffb-eb01b3c50604)
+<img src="https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/99ac41ec-e8e6-4355-8ffb-eb01b3c50604" alt="TicTacToeEoji" width="500">
+<img src="https://github.com/sahilsoni20/Tic-Tac-Toe-Emoji/assets/140968802/88ab8fc5-4d59-46f6-9c42-2f5e60dcc616" alt="TicTacToeEoji" width="500">
+
